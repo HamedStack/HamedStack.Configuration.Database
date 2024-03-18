@@ -77,11 +77,11 @@ builder.Configuration.AddDatabase(dbConnection, option =>
 - Utilize `IOptionsSnapshot` to access the latest configuration values within your application components, ensuring you can react to changes in configuration dynamically.
 
    ```csharp
-   public class WeatherForecastController : ControllerBase
+   public class MyController : ControllerBase
    {
        private readonly IOptionsSnapshot<Site> _settingsSnapshot;
 
-       public WeatherForecastController(IOptionsSnapshot<Site> settingsSnapshot)
+       public MyController(IOptionsSnapshot<Site> settingsSnapshot)
        {
            _settingsSnapshot = settingsSnapshot;
        }
