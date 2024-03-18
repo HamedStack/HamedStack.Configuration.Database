@@ -92,5 +92,5 @@ builder.Configuration.AddDatabase(dbConnection, option =>
 
 ## Refreshing Configuration
 
-- **Automatic Refresh:** If `ReloadConfigTime` is set, the library will automatically refresh configuration values from the database at the specified intervals.
+- **Automatic Refresh:** If `AutoReload` is set, the library will automatically refresh configuration values from the database at the specified intervals.
 - **Manual Refresh:** Call `DatabaseConfigurationSource.Reload();` to manually trigger a configuration reload at any time.
