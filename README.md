@@ -62,7 +62,7 @@ builder.Configuration.AddDatabase(dbConnection, option =>
    ```csharp
    public sealed class Site
    {
-       public int Name { get; init; } // Maps to Site:Name in the database
+       public string Name { get; init; } // Maps to Site:Name in the database
    }
    ```
 
